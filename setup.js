@@ -1,8 +1,8 @@
 /*1*/
-const canvas1 = document.getElementById('canvas1')
-const ctx1 = canvas1.getContext('2d')
-canvas1.width = 600;
-canvas1.height = 600;
+const canvas = document.getElementById('canvas1')
+const ctx = canvas1.getContext('2d')
+canvas.width = 600;
+canvas.height = 600;
 /*2*/
 const canvas2 = document.getElementById('canvas2')
 const ctx2 = canvas2.getContext('2d')
@@ -31,7 +31,7 @@ let keys = [];
 let score = 0;
 let collisionCount = 0;
 let frame = 0;
-let gamespeed = 1;
+let gameSpeed = 1;
 
 
 const particlesArray = [];
