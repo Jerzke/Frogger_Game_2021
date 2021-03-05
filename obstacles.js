@@ -48,12 +48,12 @@ for(let i = 0; i < 2; i++){
 
 for(let i = 0; i < 2; i++){
     let x = i * 400; 
-    carsArray.push(new Obstacle(x, canvas.height - grid * 5 - 20, grid * 2, grid, -2, 'log'));
+    carsArray.push(new Obstacle(x, canvas.height - grid * 5 - 20, grid * 2, grid, -2, 'car'));
 }
 //lane 5
 for(let i = 0; i < 3; i++){
     let x = i * 200;
-    carsArray.push(new Obstacle(x, canvas.height - grid * 6 - 20, grid, grid, 1, 'turtle'));
+    carsArray.push(new Obstacle(x, canvas.height - grid * 6 - 20, grid, grid, 1, 'car'));
 }
 initObstacles();
 
