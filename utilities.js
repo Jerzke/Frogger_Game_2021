@@ -17,7 +17,7 @@ animate();
 window.addEventListener('keydown', function(e){
     keys = [];
     keys[e.keyCode] = true;
-    if(keys[37] || keys[38] || keys[39] || keys[40]){
+    if(keys[37] || keys[38] || keys[39] || keys[40] || keys[87] || keys[65] || keys[83] || keys[68]){
     frogger.jump();
     }
 });
@@ -28,7 +28,7 @@ window.addEventListener('keyup', function(e){
 
 function scored(){
     score++;
-    gameSpeed += 0.05;
+    gameSpeed += 0.1;
     frogger.x = canvas.width/2 - frogger.width/2;
     frogger.y = canvas.height - frogger.height - 40;
 }
